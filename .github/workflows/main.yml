@@ -10,7 +10,7 @@ env:
   BRANCH_NAME: ${{ github.ref_name }}
 
 jobs:
-  build-and-deploy:
+  build-and-deploy: 
     runs-on: ubuntu-latest
     steps:
       - name: Repository Checkout
@@ -41,7 +41,7 @@ jobs:
           if [ "$BRANCH_NAME" = "main" ]; then
             deploy_flag="--prod"
           elif [ "$BRANCH_NAME" = "develop" ]; then
-            deploy_flag="--alias develop"
+            deploy_flag="--alias staging"
           fi
           netlify deploy \
             --dir dist \
