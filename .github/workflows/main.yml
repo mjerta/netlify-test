@@ -27,10 +27,6 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Create _redirects File
-        run: |
-          echo '/* /index.html 200' > dist/_redirects
-
       - name: Deploy to Netlify
         id: netlify_deploy
         run: |
