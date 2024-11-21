@@ -1,7 +1,7 @@
 function Home() {
   return (
     <h1>
-      This is the home page!!!
+      another test
     </h1>
   )
 }
