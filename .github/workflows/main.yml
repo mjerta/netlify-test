@@ -24,10 +24,11 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
-      - name: Ensure SPA Routing
-        run: echo '/* /index.html 200' > dist/_redirects
+      - name: Create _redirects File
+        run: |
+          echo '/* /index.html 200' > dist/_redirects
 
-      - name: Build project
+      - name: Build Project
         run: npm run build
 
       - name: Deploy to Netlify
