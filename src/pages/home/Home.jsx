@@ -1,8 +1,8 @@
-function home() {
+function Home() {
   return (
     <h1>
       This is the home page
     </h1>
   )
 }
-export default home;
+export default Home;
