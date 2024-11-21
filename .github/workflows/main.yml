@@ -41,7 +41,7 @@ jobs:
           if [ "$BRANCH_NAME" = "main" ]; then
             deploy_flag="--prod"
           elif [ "$BRANCH_NAME" = "develop" ]; then
-            deploy_flag="--alias develop"
+            deploy_flag="--alias staging"
           fi
           netlify deploy \
             --dir dist \
