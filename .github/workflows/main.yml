@@ -25,7 +25,7 @@ jobs:
         run: npm ci
 
       - name: Ensure SPA Routing
-        run: echo '/* /index.html 200' > public/_redirects
+        run: echo '/* /index.html 200' > dist/_redirects
 
       - name: Build project
         run: npm run build
