@@ -1,9 +1,11 @@
 function Home() {
+  const  test = import.meta.env.VITE_TEST;
   return (
     <>
       <h1>
         another test!!!
       </h1>
+      <h2>{test}</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
          dicta eligendi id ipsum perferendis possimus? Aliquid amet, aspernatur
          atque, cumque debitis delectus ea eaque eius ex ipsam laudantium
