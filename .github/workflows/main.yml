@@ -30,7 +30,7 @@ jobs:
 
       - name: Build Project
         env:
-          VITE_TEST: ${{ env.VITE_TEST }} # Use environment variable      
+          VITE_TEST: "test" # Use environment variable      
         run: npm run build
 
       - name: Create _redirects File
